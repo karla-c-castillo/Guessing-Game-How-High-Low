@@ -1,0 +1,29 @@
+### DO NOT CHANGE CODE IN THIS BLOCK
+import random
+number = random.randint(1,20) # This is a random number between 1 and 20. It will change each time you run the program.
+#############################
+
+print(number) # Please keep this line in your program. This will help me in grading.
+
+# Start your code below.
+# Karla Carrillo Castillo
+# MGT 205 Information Systems 
+# Homework 3
+
+print("Guess the number!")
+guess = input('')
+
+while True:
+  user_input = input("Enter num: ") # recv user str input
+  user_input = int(user_input)
+  if(user_input > number):
+    print("Too high!")
+    print("Incorrect guess. Try again!")
+  if(user_input < number):
+    print("Too low!")
+    print("Incorrect guess. Try again!")
+  if(user_input == number):
+    print("You guessed right!")
+    break
+
+exit(0)
